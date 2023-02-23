@@ -23,12 +23,12 @@ run <- function(P, Pa, Pb) {
 
     for (i in 1:N) {
 
-        strikes[i] <- K / (range_factor * r0^(2*i-1))
+        strikes[i] <- K / (range_factor * r0^(2 * i - 1))
         position_size <- 2 * strikes[i] * ((r0^2 - 1) / r0)
 
         liq <- 2 * strikes[i] * ((r0^2 - 1) / r0)
         Delta_P <- (sqrt( (strikes[i] * r0) / P) - 1) / (r0 -1)
-        Gamma_P <- -sqrt(K * r0) / (2 * (r0 - 1)) * P^(-3/2)
+        Gamma_P <- -sqrt(K * r0) / (2 * (r0 - 1)) * P^(-3 / 2)
         gammas[i] <- Gamma_P
 
         print(glue::glue("Position {i}: {liq} Delta_P: {Delta_P} Gamma_P: {formatC(Gamma_P, digits=9, format='f')}"))
