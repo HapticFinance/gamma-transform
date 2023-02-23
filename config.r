@@ -18,3 +18,6 @@ tick_spacing <- 60
 
 # Tick index
 tick_index <- floor(log(S0, base = tick_base))
+
+# Min tick dollar value
+min_tick_dollar_value <- 30
