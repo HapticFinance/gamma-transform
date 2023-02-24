@@ -21,3 +21,6 @@ tick_index <- floor(log(S0, base = tick_base))
 
 # Min tick dollar value
 min_tick_dollar_value <- 30
+
+# The gamma to hedge
+gamma_hedge <- 2
