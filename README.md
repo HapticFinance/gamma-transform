@@ -3,6 +3,7 @@
 This is an implementation of the gamma transform concept by Guillame Lambert [1]. 
 
 A simple optimization problem to find the amount of Uniswap V3 single tick liquidity position that perfectly hedge the gamma of a long squeeth position.
+
 Squeeth an ETH perpetual by Opyn [2].  
 
 ## Why this? 
